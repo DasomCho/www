@@ -1,0 +1,84 @@
+/* 와이드, 일반 pc  */
+
+.arrow{width:50px; position: fixed; left: 4%; top:45%; z-index: 10}
+.arrow a{display: block}
+.arrow i{font-size: 3em; }
+.arrow i:last-child{margin-top: 10px}
+
+#page{width:100px; position: fixed; right: 4%; bottom:60px; z-index: 10}
+#page li {cursor: pointer}
+#page li a{display: block; position: relative;}
+#page li a span.num{display: block; font-size: .9em; transform: scale(0, 0); transition: all .5s}
+#page li a span.bar{display: block; width:30px; height:1px; background: #8A866A; position: absolute; right:0; top:10px; transition: all .5s}
+
+#page li a:hover span.num{transform: scale(1, 1)}
+#page li:hover span.bar{width:60px; height: 3px; background: #D2B469 }
+#page li.on span.num{transform: scale(1, 1)}
+#page li.on span.bar{width:60px; height: 3px; background:#D2B469  }
+
+section{width:75%; position:relative; overflow: hidden; padding:0 10% 0 15%;}
+
+section:nth-child(5){background: url(../images/pc.png) 30% center no-repeat; background-size: 45% }
+section:nth-child(6){background: url(../images/mobile.png) 30% center no-repeat; background-size: 45% }
+section:nth-child(7){background: url(../images/responsive.png) 30% center no-repeat; background-size: 45% }
+section:nth-child(8){background: url(../images/wordpress.png) 30% center no-repeat; background-size: 45% }
+section:nth-child(9){background: url(../images/bootstrap.png) 30% center no-repeat; background-size: 45% }
+
+
+#holder{position: relative; font-size: 1.8em; line-height: 1.7em; margin-bottom:130px; margin-top: 150px}
+#slogans{position: relative; top:-47px; left:55px;}
+p.slogan{text-rendering: optimizeLegibility; margin: 0; font-size: 1.3em; text-transform: uppercase; color: #D2B469}
+p.slogan strong{display: block; position: relative; opacity: 0}
+
+.skill{width:50%; position: absolute; bottom:60px; left:15%;}
+.skill dl{font-size: 1.2em; margin-bottom: 30px; width:300px}
+.skill dl dt{text-decoration: underline; margin-bottom: 20px}
+
+@media screen and (max-height:650px) {
+    .skill dl{float:left}
+}
+
+.info{position: absolute; top:145px; right: 15%; }
+.info p{text-align: right; margin-bottom: 10px; font-size: 1.2em; }
+.info p:nth-child(1){font-size: 3.5vw; font-weight: bold; margin-bottom: 20px; }
+.info p:nth-child(4){letter-spacing: .05em}
+
+section .title{width:44%; float: right; margin-left: 6%; text-align: right; position: relative; top:26%; }
+section .title h2{font-size: 3.3vw; margin-top: 50px }
+section .title h2 span{font-family: 'NanumSquareB'; font-weight: 100; vertical-align: bottom; font-size: 3vw;}
+section .title p{font-family: 'NanumSquareL'; font-weight: 100; font-size: 1.3em; margin: 15px 5px 0 0 }
+section .title .more{position: absolute; right: 0; top:80%; width:77px; opacity: 0; transform:translate3d(100px,0,0); transition: all .5s; padding-top: 30px }
+section .title:hover .more{opacity: 1; transform: translate3d(0,0,0); }
+section .title .more:after { content: ''; height: 7px; background:#82393A; display:block; margin-top: -10px;  transition: all .5s;}
+section .title .more:hover:after{margin-top: 0;}
+section .site{position: absolute; bottom:30%; right: 10%}
+
+
+/* 일반 pc */
+@media screen and (max-width:1280px) {
+	
+}
+
+/* 테블릿 */
+@media screen and (max-width:1024px) {
+
+}
+
+/* 소형 테블릿 */
+@media screen and (max-width:768px) {
+    
+}
+
+
+/* 모바일 */
+@media screen and (max-width:640px) {
+
+}
+
+
+/* 최소 사이즈 처리 */
+@media screen and (max-width:480px) {
+
+}
+
+

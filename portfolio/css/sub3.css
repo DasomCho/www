@@ -1,0 +1,15 @@
+/* 와이드, 일반 pc  */
+
+#body{background-color: transparent}
+#subTop{background:url(../images/sub3top.jpg) center; background-size: cover;} 
+#subCon .con div{width:65%; position: relative; clear: both}
+#subCon .con div img{width:100%;}
+#subCon .con div:nth-child(4){z-index: 10}
+#subCon .con div:nth-child(5){top:-150px; left: 35%; z-index: 5}
+#subCon .con>img{position: absolute;}
+#subCon .con>img.move5{width:20%; top:10%; right: 10%; filter: drop-shadow(2px 2px 2px #666); transform: rotate(-5deg); transition: .2s ease-in-out}
+#subCon .con>img.move6{width:17%; top:18%; right: 5%; filter: drop-shadow(2px 2px 2px #666); transform: rotate(10deg); transition: .2s ease-in-out}
+#subCon .con>img:nth-child(8){width:40%; top:35%; right: 18%; z-index: 20}
+#subCon .con>img:nth-child(9){width:20%; top:50%; right: 10%; z-index: 0; transform: rotate(-10deg)}
+#subCon .con>img.move7{width:35%; top:75%; left: 5%; z-index: 20; filter: drop-shadow(2px 2px 2px #666); transform: rotate(-10deg); transition: .2s ease-in-out}
+#subCon .con>img:nth-child(11){width:40%; bottom:3%; left: 5%; z-index: 0; transform: rotate(-70deg)}

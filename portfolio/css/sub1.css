@@ -1,0 +1,12 @@
+#body{background-color: transparent}
+#subTop{background:url(../images/sub1top.jpg) center; background-size: cover;}
+#subCon .con div{width:65%; position: relative; clear: both}
+#subCon .con div img{width:100%;}
+#subCon .con div:nth-child(4){z-index: 10}
+#subCon .con div:nth-child(5){top:-150px; left: 35%; z-index: 5}
+#subCon .con>img{position: absolute;}
+#subCon .con>img.move1{width:25%; top:12%; right: 6%; filter: drop-shadow(2px 2px 2px #666); transform: rotate(-5deg); transition: .2s ease-in-out}
+#subCon .con>img:nth-child(7){width:40%; top:22%; right: 18%; z-index: 20}
+#subCon .con>img:nth-child(8){width:40%; top:50%; left: 12%; z-index: 0; transform: rotate(-10deg)}
+#subCon .con>img.move2{width:35%; top:70%; left: 0; z-index: 20; filter: drop-shadow(2px 2px 2px #666); transform: rotate(20deg); transition: .2s ease-in-out}
+#subCon .con>img:nth-child(10){width:40%; bottom:3%; left: 5%; z-index: 0; transform: rotate(5deg)}

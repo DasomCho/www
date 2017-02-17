@@ -1,0 +1,161 @@
+<!DOCTYPE HTML>
+<html xml:lang="ko" lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>Portfolio</title>
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="app_icon.png">
+<link rel="apple-touch-startup-image" href="startup.png">
+    
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/main.css">
+
+<script src="js/prefixfree.min.js"></script>
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/jquery-migrate-1.4.1.min.js"></script>
+<script src="https://use.fontawesome.com/bccb306c59.js"></script>
+<script src="js/jquery.mousewheel.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+<script src="js/nav.js"></script>
+<script src="js/textchange.js"></script>
+<script src="js/custom.js"></script>
+
+<script>
+	// <![CDATA[
+		try {
+			window.addEventListener('load', function(){
+	    	    setTimeout(scrollTo, 0, 0, 1); 
+	    	}, false);
+		} catch(e) {}
+	// ]]>
+</script>
+    
+<!--[if lt IE 9]> 
+    <script src="js/html5shiv.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+    <script src="js/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+    <div class="size">Too small!!</div>
+    <div id="wrap">
+        <header id=header>
+            <h1 id="logo"><a href="index.html">Portfolio</a></h1>
+            <a class="see" href="javascript:void(0)">see all projects</a>
+            <nav>
+                <a href="javascript:void(0)" class="closebtn">back</a>
+                <ul>       
+                    <li><a href="sub1.html">xhtml1.0<span>하나투어</span></a></li>
+                    <li><a href="sub2.html">mobile web<span>하나투어</span></a></li>
+                    <li><a href="sub3.html">responsive web<span>houzz</span></a></li>
+                    <li><a href="sub4.html">wordpress web<span>that little bakery</span></a></li>
+                </ul>
+                <p>Site developed with ♥ by Dasom Cho</p>
+            </nav>
+        </header>
+        <div class="arrow">
+            <a class="b1" href="#a"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+            <a class="b2" href="#a"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+        </div>
+        <ul id="page">
+            <li class="on"><a href="#"><span class="num">01/06</span><span class="bar"></span></a></li>
+            <li><a href="#"><span class="num">02/06</span><span class="bar"></span></a></li>
+            <li><a href="#"><span class="num">03/06</span><span class="bar"></span></a></li>
+            <li><a href="#"><span class="num">04/06</span><span class="bar"></span></a></li>
+            <li><a href="#"><span class="num">05/06</span><span class="bar"></span></a></li>
+            <li><a href="#"><span class="num">06/06</span><span class="bar"></span></a></li>
+        </ul>
+        <!-- 첫 번째 박스 -->
+        <section>
+            <div id="holder">
+                Obsessively thorough<br/>responsive web development,<br/>with
+                <div id="slogans">
+                    <p class="slogan"><strong>HTML5</strong></p>
+                    <p class="slogan"><strong>CSS3</strong></p>
+                    <p class="slogan"><strong>JQUERY</strong></p>
+                    <p class="slogan"><strong>WORDPRESS</strong></p>
+                    <p class="slogan"><strong>BOOTSTRAP</strong></p>
+                </div>
+            </div>
+            <div class="skill">
+                <dl>
+                    <dt>develop</dt>
+                    <dd>Responsive, Mobile web, XHTML 1.0 transiton, CSS2, HTML5, CSS3, Wordpress, Bootstrap, Jquery, Javascript, MySql, PHP</dd>
+                </dl>
+                <dl>
+                    <dt>design</dt>
+                    <dd>Adobe Photoshop, Illustration</dd>
+                </dl>
+            </div>
+            <div class="info">
+                <p>CHO DASOM</p>
+                <p>1991. 12. 13 (+)</p>
+                <p>+82)10 - 2310 - 8132</p>
+                <p>ekthadl13@naver.com</p>
+            </div>
+        </section>
+        <!-- 두 번째 박스 -->
+        <section>
+            <div class="title">
+                <a href="sub1.html">
+                    <h2>xhtml 1.0 <span>(기업형)</span></h2>
+                    <p>하나투어</p>
+                    <p class="more">see more</p>
+                </a>
+            </div>
+            <a class="site" href="http://ssom13.cafe24.com/" title="기업형 사이트 새창으로 열림" target="_blank">사이트 바로가기 →</a>
+        </section>
+        <!-- 세 번째 박스 -->
+        <section>
+            <div class="title">
+                <a href="sub2.html">
+                    <h2>mobile web</h2>
+                    <p>하나투어</p>
+                    <p class="more">see more</p>
+                </a>
+            </div>
+            <a class="site" href="http://ssom13.cafe24.com/mobile/" title="모바일 사이트 새창으로 열림" target="_blank">사이트 바로가기 →</a>
+        </section>
+        <!-- 네 번째 박스 -->
+        <section>
+            <div class="title">
+                <a href="sub3.html">
+                    <h2>responsive web</h2>
+                    <p>houzz</p>
+                    <p class="more">see more</p>
+                </a>
+            </div>
+            <a class="site" href="http://ssom13.frontendstudy.com/" title="반응형 사이트 새창으로 열림" target="_blank">사이트 바로가기 →</a>
+        </section>
+        <!-- 다섯 번째 박스 -->
+        <section>
+            <div class="title">
+                <a href="sub4.html">
+                    <h2>wordpress web</h2>
+                    <p>that little bakery</p>
+                    <p class="more">see more</p>
+                </a>
+            </div>
+            <a class="site" href="http://ssom13.cafe24.com/wordpress/" title="워드프레스 사이트 새창으로 열림" target="_blank">사이트 바로가기 →</a>
+        </section>
+        <!-- 여섯 번째 박스 -->
+        <section>
+            <div class="title">
+                <a href="sub4.html">
+                    <h2>bootstrap web</h2>
+                    <p>greenery</p>
+                    <p class="more">see more</p>
+                </a>
+            </div>
+            <a class="site" href="http://ssom13.cafe24.com/bootstrap/" title="부트스트랩 사이트 새창으로 열림" target="_blank">사이트 바로가기 →</a>
+        </section>
+    </div>
+    <!-- wrap -->
+</body>
+</html>
