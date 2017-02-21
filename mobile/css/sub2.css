@@ -1,0 +1,86 @@
+/* CSS Document */
+
+.tabs{  margin:61px 0; border-top:1px solid #ccc; padding:15px 0 0 15px; overflow:hidden; }
+.tabs a{ display:block; width:65px; height:24px; float:left; margin-right: 15px; font-family:NanumSquareB; font-size:1.2em; color: #666; text-align: center}
+.tabs a.active { border-bottom: 2px solid #97b2c8}
+
+.content-slide{position:relative; overflow: hidden; }
+
+.content-slide .business{width:100%; height:100%; background: #e5eaee; position: relative; top:60px; padding:210px 0; margin-bottom: 230px; }
+.content-slide .business .title{width:80%; height:250px; position: absolute; top:-65px; left:0; background-size:cover;}
+
+@media all and (min-width: 750px) { 
+    .content-slide .business{width:100%; height:100%; background: #e5eaee; position: relative; top:60px; padding:250px 0; margin-bottom: 300px; }
+    .content-slide .business .title{width:80%; height:300px; position: absolute; top:-115px; left:0; background-size:cover;}
+
+}
+
+
+.content-slide .business .title h4{position: absolute; bottom:20px; font-family:NanumSquareB; font-size:2em; z-index: 15}
+.content-slide .business .con{width:60%; position: absolute; top:150px; left:10%; padding:10%; background: #fff; z-index: 10}
+.content-slide .business .con p:nth-child(1){font-family:NanumSquareB; color: #97b2c8; font-size:1.1em; margin-bottom: 10px}
+.content-slide .business .con p:nth-child(2){color: #666; line-height: 1.3em}
+
+.content-slide .travel .title{margin-left:20%; background:url(../images/travelx2.png) center no-repeat;}
+.content-slide .travel .title h4{left:-30px;}
+
+.content-slide .hotel .title{margin-right:20%; background:url(../images/hotelx2.png) center no-repeat;}
+.content-slide .hotel .title h4{right:-30px;}
+
+.content-slide .duty .title{margin-left:20%; background:url(../images/dutyx2.png) center no-repeat;}
+.content-slide .duty .title h4{left:-30px;}
+
+.content-slide .fnb .title{margin-right:20%; background:url(../images/fnbx2.png) center no-repeat;}
+.content-slide .fnb .title h4{right:-30px;}
+
+.content-slide .image img{width:100%}
+
+@media all and (orientation:portrait){
+    .content-slide .image{width:70%; margin-left:30%}
+    .content-slide dl{position: relative; margin-bottom: 80px; }
+    .content-slide dl dd{width:65%; margin: 15px 5% 0 30%; color: #666; line-height: 1.3em; font-size: .9em}
+}
+
+@media all and (orientation:landscape){
+    .content-slide .image{width:60%; margin-left:40%; height: 180px; overflow: hidden; padding-bottom: 5%}
+    .content-slide dl{position: relative; margin-bottom: 65px; }
+    .content-slide dl dd{width:55%; margin: 15px 5% 0 40%; color: #666; line-height: 1.3em; font-size: .9em}
+}
+
+@media all and (min-width: 500px) { 
+    .content-slide .image{width:60%; margin-left:40%; height: 180px; overflow: hidden; padding-bottom: 5%}
+    .content-slide dl{position: relative; margin-bottom: 65px; }
+    .content-slide dl dd{width:55%; margin: 15px 5% 0 40%; color: #666; line-height: 1.3em; font-size: .9em}
+}
+
+@media all and (min-width: 750px) { 
+    .content-slide .image{width:60%; margin-left:40%; height: 200px; overflow: hidden; padding-bottom: 5% }
+    .content-slide dl{position: relative; margin-bottom: 65px; }
+    .content-slide dl dd{width:55%; margin: 15px 5% 0 40%; color: #666; line-height: 1.3em; font-size: .9em}
+}
+
+
+@media all and (min-width: 1000px) { 
+    .content-slide .image{width:60%; margin-left:40%; height: 270px; overflow: hidden;}
+    .content-slide dl{position: relative; margin-bottom: 65px; }
+    .content-slide dl dd{width:55%; margin: 15px 5% 0 40%; color: #666; line-height: 1.3em; font-size: .9em}
+}
+
+@media all and (min-width: 1100px) { 
+    .content-slide .image{width:60%; margin-left:40%; height: 270px; overflow: hidden; padding-bottom: 5%}
+    .content-slide dl{position: relative; margin-bottom: 65px; }
+    .content-slide dl dd{width:55%; margin: 15px 5% 0 40%; color: #666; line-height: 1.3em; font-size: .9em}
+}
+
+.content-slide dl dt{font-family:NanumSquareB; font-size:1.5em; position:absolute; top:-100px; left:5%; background: url(../images/arrow.png) 2px bottom no-repeat;  }
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+    .content-slide dl dt{background: url("../images/arrowx2.png") 2px bottom no-repeat;
+        -webkit-background-size: 32px 16px; }
+}
+
+.content-slide dl dt a{display: block; padding-bottom: 30px}
+.content-slide dl dt span{display: block; font-family:Nanum Gothic; font-size:.6em; color: #666; line-height: 2.5em }
+
+
+
+

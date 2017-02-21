@@ -1,0 +1,57 @@
+/* CSS Document */
+
+/* visual */
+
+#headerWrap .main{position: relative; top:0; left:0; z-index:10; margin-bottom: 50px;width:100%; }
+#headerWrap .main .gallery .link1,
+#headerWrap .main .gallery .link2{display:none}
+#headerWrap .main .gallery li img{width:100%}
+#headerWrap .main a{display:block; width: 23px; height:23px; background: url("../images/down.png") center no-repeat; padding:10px; position: absolute; left:50%; bottom:10px; margin-left:-21.5px; text-indent:-9999px; 
+    animation:move ease-in-out 1s;
+    animation-iteration-count: infinite; 
+    animation-direction:alternate-reverse}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+    #headerWrap .main span{background: url("../images/downx2.png") center no-repeat;
+        -webkit-background-size: 23px 23px; }
+}
+
+@keyframes move{
+    0%{ bottom:10px;
+    }
+ 
+    100%{ bottom:20px;
+    }
+}
+
+#mainCon{padding-top: 50px;}
+#mainCon section{ padding:0 15px 30px 15px; margin-bottom: 150px; position: relative;}
+#mainCon section h3{font-family:NanumSquareB; font-size:1.5em;}
+#mainCon section img{width:100%; margin:25px 0; transition: all 1.5s ease-in-out; opacity: 0}
+#mainCon section p{margin:0 15px; line-height: 1.7em;  transition: all 1.5s ease-in-out; opacity: 0}
+#mainCon section p span{display: block; width: 20px; height: 25px; border-top: 1px solid #999}
+#mainCon section .more{display: block; width:25px; height: 25px; background: url("../images/more.png") 10px 10px no-repeat; position: absolute; text-indent: -9999px; padding:10px;  }
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+    #mainCon section .more{background: url("../images/morex2.png") 10px 10px no-repeat;
+     -webkit-background-size: 25px 25px; }
+}
+
+
+#mainCon .about .conBox{width:70%; height:100%; background: #eee; position: absolute; left:0; top:12px; z-index: -10}
+#mainCon .about img{ margin-left: -110% }
+#mainCon .about .more{ left:5px; bottom:-33px; }
+#mainCon .business .conBox{width:70%; height:100%; background: #eee; position: absolute; left:30%; top:12px; z-index: -10}
+#mainCon .business img{ margin-left: 110%}
+#mainCon .business h3{text-align: right;}
+#mainCon .business p{text-align: right; position: relative; padding-top: 25px}
+#mainCon .business p span{position: absolute; right:0 ;top:0;}
+#mainCon .business .more{ right:5px; bottom:-33px; }
+
+#mainCon .notice{ position: relative; padding: 30px 0 50px 0; margin:0 15px 50px 15px; overflow: hidden; }
+#mainCon .notice span{display:block; width:100%; height:1px; border-top:1px solid #999; position: absolute; left:0; top:11.5px;}
+#mainCon .notice h3{text-align: center; background: #fff; position: absolute; top:0; left:50%; margin-left:-46.115px; padding:0 15px; }
+
+
+#mainCon .notice .slideBox{width:100%; height:15px; overflow:hidden; position:absolute; text-align:center; margin-top:20px;}
+#mainCon .notice .slideBox .slide{position:absolute; width:100% }
+#mainCon .notice .slideBox .slide ul li{ height:15px; overflow:hidden; text-overflow:clip; -o-text-overflow:clip; margin-bottom:5px;}

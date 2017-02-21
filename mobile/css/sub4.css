@@ -1,0 +1,47 @@
+/* CSS Document */
+
+.tabs { margin:61px 0; border-top:1px solid #ccc; position:relative; overflow:hidden; width:100%;} 
+.tabs .tab {width:65px; height:24px; display:block; float:left; font-family:NanumSquareB; font-size:1.2em; color: #666; text-align: center; position:absolute; top:15px} 
+
+.tabs .tab1{left:15px;}
+.tabs .tab2{left:95px;}
+
+.tabs .mainCon {display:none; padding-top:60px} 
+
+.mainCon .apply{width:100%; height:700px; background: #e5eaee; padding-top:70px; margin-top:80px;}
+.mainCon .image1{width:70%; position: absolute; top:100px; left: 30%; z-index: 0}
+.mainCon .apply h4{font-family:NanumSquareB; font-size:1.5em; position:absolute; top:-48px; left: 6%; line-height:1.5em;z-index: 10}
+.mainCon .apply #applyForm{background: #fff; width:88%; margin: 0 3%; padding: 40px 3% 80px 3%; position: absolute;}
+.mainCon .apply #applyForm .addr div, .addr span{float:left}
+.mainCon .apply #applyForm .inputbox01 {font-size:.9em; color:#555555; padding:.5%; line-height:18px;}
+.mainCon .apply #applyForm table{width:100%; font-size:.95em; line-height:1.5em; border-collapse:collapse; margin-bottom:30px}
+.mainCon .apply #applyForm caption{text-indent:-9999px}
+.mainCon .apply #applyForm th, td{padding:10px 1%}
+.mainCon .apply #applyForm th{min-width:60px; width:30%; color:#666; text-align:left; }
+.mainCon .apply #applyForm td{width:66%;}
+.mainCon .apply #applyForm .area input{margin-bottom: 10px}
+.mainCon .apply #applyForm .area label{margin: 0 10px 10px 0}
+.mainCon .apply #applyForm .name input{width:100px}
+.mainCon .apply #applyForm .address input{width:73%}
+.mainCon .apply #applyForm .address .second{margin-top:5px;}
+.mainCon .apply #applyForm .phone2{width:60px}
+.mainCon .apply #applyForm #email{width:82px}
+.mainCon .apply #applyForm .select{margin-top: 5px} 
+.mainCon .apply #applyForm .content textarea{width: 73%}
+.mainCon .apply #applyForm .button {width: 200px; position: absolute; left: 50%; text-align: center;  margin: 25px 0 0 -100px}
+.mainCon .apply #applyForm .button input{padding: 5px 20px; }
+.mainCon .apply #applyForm .button .button1{background: #97b2c8; margin-right: 20px; border: 0}
+.mainCon .apply #applyForm .button .button2{background: #eee; border: 0 }
+
+
+.mainCon .qna{position: relative; padding:0 15px 30px 15px; margin-top:80px; }
+.mainCon .qna .conBox{width:70%; height:100%; background: #eee; position: absolute; left:0; top:0; z-index: -10}
+.mainCon .qna h4{font-family:NanumSquareB; font-size:1.5em; position:absolute; top:-48px; left: 6%; line-height:1.5em;}
+.mainCon .qna .image2{width:100%; margin:25px 0;}
+.mainCon .qna a{display: block; }
+.mainCon .qna .all{position: absolute; right: 15px; background: url(../images/plusx2.png) left center no-repeat; padding-left: 20px; background-size:15px 15px}
+.mainCon .qna ul{margin-top:40px;}
+.mainCon .qna ul li{margin-bottom: 30px}
+.mainCon .qna ul li p{line-height: 1.5em}
+.mainCon .qna ul li .q{margin-bottom: 10px; background:url(../images/qx2.png) left 4px no-repeat; padding-left: 20px; background-size:12px 12px}
+.mainCon .qna ul li .a{ display: none; padding:10px 10px 10px 20px; font-size: .9em; }

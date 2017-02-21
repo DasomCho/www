@@ -1,0 +1,10 @@
+/* CSS Document */
+
+#mainCon{ margin:61px 0; border-top:1px solid #ccc; padding-top:60px}
+#mainCon section{ padding:0 15px 30px 15px; margin-bottom: 150px; position: relative;}
+#mainCon .section1 .conBox{width:70%; height:100%; background: #eee; position: absolute; left:0; top:47px; z-index: -10}
+#mainCon .section1 h3{ font-family:NanumSquareB; font-size:1.5em; line-height: 1.5em; margin-bottom: 30px; }
+#mainCon .section1 dl{width:100%; overflow: hidden; margin-top: 15px}
+#mainCon .section1 dl dt, #mainCon .section1 dl dd{height: 42px; margin-top: 30px; line-height: 1.5em; border-top:2px solid #ccc; padding-top:10px; padding-left:2%}
+#mainCon .section1 dl dt{width:28%; float:left;font-weight: bold; color: #666; }
+#mainCon .section1 dl dd{width:58%; float:right; margin-left: 10%;}
