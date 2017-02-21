@@ -1,0 +1,22 @@
+@charset "utf-8";
+/* CSS Document */
+
+.container{background:#fff url(); padding: 0 100px 100px 100px;}
+.content{overflow: hidden}
+.content>div{float: left; width:460px; padding:0 20px }
+.loginTitle{padding: 60px 0; border-bottom: 1px solid #ccc; margin-bottom: 50px}
+.loginTitle h2{width:100%; height: 28px; background: url(../../common/images/loginTitle.jpg) center no-repeat ; text-indent: -9999px; overflow:hidden; margin-bottom: 10px }
+.loginTitle p{width:100%; height: 14px; background: url(../../common/images/loginText.jpg) center no-repeat; text-indent: -9999px; overflow:hidden; }
+
+.login>img{margin-bottom: 50px; }
+
+#login_form #id_input_button{overflow: hidden}
+#login_form #id_input_button div li{font-size:1.2em; font-weight: bold; margin-bottom: 10px}
+#login_form #id_input_button div li input{padding: 10px 10px; font-size: 1.2em; width:360px; margin-bottom: 20px}
+#login_form #id_input_button #login_button input{padding: 10px 0; font-size: 1.2em; width:385px; background:#fff; border: 1px solid #ccc; height: 45px; margin-top: 30px; font-weight: bold; cursor: pointer}
+#login_form #id_input_button #login_button input:hover{background: #6e9cc0; color: #fff}
+
+
+.content .new{padding-top: 310px; background: url(../../common/images/new.jpg) center 50px no-repeat }
+.content .new a{display: block; width:382px; border: 1px solid #ccc; font-size: 1.2em; text-align: center; padding: 13.5px 0; margin: 0 auto; font-weight: bold}
+.content .new a:hover{background:#c95074; color: #fff}

@@ -1,0 +1,252 @@
+<?
+session_start();
+@extract($_POST);
+@extract($_GET);
+@extract($_SESSION);
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name='keywords' content='하나투어, 여행사, 해외여행, 해외항공, 패키지여행, 해외호텔, 자유여행, 에어텔, 국내항공, 국내여행, 제주여행, 국내호텔, 국내콘도, 국내펜션, 국내숙박, 허니문, 크루즈, 골프, 제우스, 내나라여행, 렌터카, 테마여행, 여행정보, 지도, 가이드북, 여권비자, 해외박람회, 출장여행, 단체여행, 비즈니스여행, 하나Free, 하나티켓, 하나프리, 하나free, 하나팩, 하나Pack, 하나티켓, 투어팁스, tourtips, 뚜르드카페, HTSHOP, 하나샵, H웨딩, 여행 인포그래픽, 해외여행정보, 추천여행사, 최저가항공권, 땡처리여행, 스티커, Sticker, 겟어바웃, Get About'/> 
+<meta name='description' content='글로벌 No.1 문화관광 유통그룹 하나투어의 기업 홈페이지 입니다.'/> 
+<title>하나투어</title>
+<link href="common/css/common.css" type="text/css" rel="stylesheet" />
+<link href="maincss/mainlayout.css" type="text/css" rel="stylesheet" />
+<link rel="shortcut icon" type="image/x-icon"  href="favicon.ico" />
+<script type="text/javascript" language="javascript" src="mainjs/common_flash.js">
+</script>
+<script language="javascript" src="common/js/jquery-1.8.3.min.js" type="text/javascript"></script>
+<script language="javascript" src="mainjs/mainpopup.js" type="text/javascript"></script>
+<script language="javascript" src="common/js/fullnav.js" type="text/javascript"></script>
+<script language="javascript" src="mainjs/move.js" type="text/javascript"></script>
+<script language="javascript" src="mainjs/business.js" type="text/javascript"></script>
+<script language="javascript" src="mainjs/news.js" type="text/javascript"></script>
+<script language="javascript" src="mainjs/tab.js" type="text/javascript" ></script>
+<script language="javascript" src="common/js/family.js" type="text/javascript"></script>
+</head>
+<body>
+		<? include "./common/mainhead.html" ?>
+        <div class="visual">
+            <div class="gallery">
+                 <ul>
+                      <li class="link1"><img src="images/a1.jpg" alt='' /></li>
+                      <li class="link2"><img src="images/a2.jpg" alt='' /></li>
+                      <li class="link3"><img src="images/a3.jpg" alt='' /></li>
+                      <li class="link4"><img src="images/a4.jpg" alt='' /></li>
+                </ul>
+             </div>
+             <!-- gallery e -->
+             <div class="dock">
+              	<span class="mbutton btn1"></span>
+              	<span class="mbutton btn2"></span>
+             	<span class="mbutton btn3"></span>
+              	<span class="mbutton btn4"></span>
+                <span class="ps"></span>
+            </div>
+            <!-- dock e -->
+        </div> 
+        <!-- visual e -->
+        <div id="content">
+        	<h2 class="hidden">본문 콘텐츠 영역</h2>
+        	<div class="contentTop">
+            	<div class="video">
+            		<script type="text/javascript" language="javascript">flashLoad('video/movie.swf','285','285','id','#ffffff','','')</script>
+                </div>
+                <!-- video e -->
+                <? include "./common/func.php"; ?>
+                <div class="notice">
+            		<h3>
+                    	<a href="sub5/sub5_1.html"><img src="images/notice.jpg" alt="notice" /></a>
+                    </h3>
+                    <ul>
+                        <? latest_article("greet", 4, 25); ?>  
+                    </ul>
+                    <a class="more" href="sub5/sub5_1.html"><img src="images/more.jpg" alt="더보기" /></a>
+                </div>
+                <!-- notice e -->
+                 <div class="contentRight">
+                	<div class="stock">
+                        <h3>
+                    	<a href="sub3/sub3_1.html"><img src="images/stock.jpg" alt="stock" /></a>
+                        </h3>
+                        <a class="stockCon" href="sub3/sub3_1.html"><img src="images/stockcon.jpg" alt="현재주가" /></a>
+                        <ul>
+                        	<li><dl><dt>전일종가</dt><dd>69,700</dd></dl></li>
+                        	<li><dl><dt>고가</dt><dd>71,300</dd></dl></li>
+                        	<li><dl><dt>저가</dt><dd>69,900</dd></dl></li>
+                        	<li><dl><dt>거래량</dt><dd>49,141</dd></dl></li>
+                        </ul>
+                        <a class="more" href="sub3/sub3_1.html"><img src="images/more.jpg" alt="더보기" /></a>
+                    </div>
+                    <!-- stock e -->
+                    <div class="quick">
+                        <h3 class="hidden">quick menu</h3>
+                        <ul>
+                        	<li class="q1"><a href="sub1/sub1_1.html">회사소개</a></li>
+                        	<li class="q2"><a href="sub1/sub1_4.html">오시는길</a></li>
+                        	<li class="q3"><a href="sub6/sub6_4.html">채용문의</a></li>
+                        </ul>
+                    </div>
+                    <!-- quick e -->
+                </div>
+                <!-- contentRight e -->   
+            </div>
+            <!-- contentTop e -->
+            <div class="contentMid">
+                <? include "./common/func2.php"; ?>
+            	<div class="news">
+                    <h3><a href="sub5/sub5_2.html"><img src="images/news.jpg" alt="news"  /></a></h3>
+                    <ul class="news_box_container">
+                        <? latest_article2("concert", 6, 150); ?>
+                    </ul>
+                    <span class="num"><strong>1</strong>/6</span> 
+                    <span class="btn">
+                      <a href="#btn1" class="leftBtn">왼쪽</a>
+                      <a href="#btn2" class="RightBtn">오른쪽</a>
+                    </span>
+                </div>
+                <!-- news e -->
+                <div class="business">
+                	<h3>
+                    	<a href="sub2/sub2_1.html"><img src="images/business.png" alt="business" /></a>
+                    </h3>
+                    <div class="slide_gallery">
+                        <ul>
+                            <li><a href="sub2/sub2_1.html"><img src="images/b1.jpg" alt="travel" /></a></li>
+                            <li><a href="sub2/sub2_1.html"><img src="images/b2.jpg" alt="hotel" /></a></li>
+                            <li><a href="sub2/sub2_1.html"><img src="images/b3.jpg" alt="dutyfree" /></a></li>
+                            <li><a href="sub2/sub2_1.html"><img src="images/b4.jpg" alt="f&amp;b" /></a></li>
+                        </ul>
+                    </div>
+                    <span> 
+                    	<img class="m1 button" src="images/btnPrev.png" alt="이전" />
+                        <img class="m2 button" src="images/btnNext.png" alt="다음" />
+                    </span>
+                </div>
+                <!-- business e -->
+               
+            </div>
+            <!-- contentMid e -->
+            <div class="contentBottom">
+            	<div class="recruit">
+                	<h3 class="hidden">채용공고</h3>
+                    <a href="sub6/sub6_3.html"><img src="images/recruit.jpg" alt="recruit"  /></a>
+                    <a class="shortcut" href="sub6/sub6_3.html"><img src="images/shortcut.png" alt="채용공고 바로가기" /></a>
+                </div>
+                <!-- recruit e -->
+                <div class="sns">
+                	<h3>
+                        <a href="javascript:void(0)"><img src="images/sns.jpg" alt="sns"  /></a>
+                    </h3>
+                    <div class="tabs">
+                        <h4><a href="javascript:void(0)" class="tab tab0">페이스북</a></h4>
+                        <div class="contlist">
+                            <ul class="face">
+                                <li>
+                                    <a class="faceId" href="https://www.facebook.com/HanaTour.fb" title="하나투어 페이스북 새창으로 열림" target="_blank">하나투어</a>
+                                    <span>9월 29일 오후 11:00 ·<img src="images/globe.jpg" alt="globe"/></span>
+                                    <p>마치 동네 사람처럼 호주를 여행한다는 건 어떤 기분일까요?<br />>> 하나투어 호주여행 준비하기 <a href="https://goo.gl/T7j2yN" title="새창으로 열림" target="_blank">https://goo.gl/T7j2yN</a></p>
+                                    <div class="img">
+                                        <img src="images/facephoto1.jpg" alt="시드니 마켓 투어 Top4"/>
+                                        <img class="last" src="images/facephoto2.jpg" alt=""/>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="faceId" href="https://www.facebook.com/HanaTour.fb" title="하나투어 페이스북 새창으로 열림" target="_blank">하나투어</a>
+                                    <span>10월 6일 오후 11:00 ·<img src="images/globe.jpg" alt="globe"  /></span>
+                                    <p><span>#하나투어 #문화예술희망여행</span> 베트남의 아름다운 휴양지로 알려진 다낭. 아티스트들과 함께 다녀온 곳은 문화예술이 생활 곳곳에 스며들어있는 곳이었습니다. 한 땀 한 땀 정성스러운 공예마을부터 역사를 고이 간직한 유적지까지 다낭 그리고 호이안의 고풍스러운 매력을 여러분과 함께 느껴보고 싶어요 :)</p>
+                                    <div class="img">
+                                        <img src="images/facephoto3.jpg" alt="베트남 예술의 도시를 찾아서"/>
+                                        <img class="last" src="images/facephoto4.jpg" alt=""/>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="faceId" href="https://www.facebook.com/HanaTour.fb" title="하나투어 페이스북 새창으로 열림" target="_blank">하나투어</a>
+                                    <span>10월 6일 오전 11:00 ·<img src="images/globe.jpg" alt="globe"/></span>
+                                    <p>구마모토는 쿠마몽의 도시쿠마! 지하철로 떠나는 구마모토 여행♬<br/>(<span>#숨은쿠마찾기_꼭꼭숨어라_쿠마몽</span>)</p>
+                                    <div class="img">
+                                        <img src="images/facephoto5.jpg" alt="지하철로 떠나는 구마모토 여행"/>
+                                        <img class="last" src="images/facephoto6.jpg" alt=""/>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- contlist1 e -->
+                        <h4><a href="javascript:void(0)" class="tab tab1">트위터</a></h4>
+                        <div class="contlist">
+                            <ul class="twit">
+                                <li>
+                                    <a class="twitId" href="https://twitter.com/hanatour" title="하나투어 트위터 새창으로 열림" target="_blank">하나투어</a>
+                                    <span>@hanatour · 7시간</span>
+                                    <p>여행자들의 로망, <span>#시베리아</span> 횡단열차! 시베리아 <span>#횡단열차</span>의 모든 것을 소개합니다 :)<br/><a href="http://blog.hanatour.com/220850720086" title="새창으로 열림" target="_blank">blog.hanatour.com/220850720086</a></p>
+                                    <img src="images/twitphoto1.jpg" alt="여행자들의 로망! 시베리아 횡딘열차"/>
+                                </li>
+                                <li>
+                                    <a class="twitId" href="https://twitter.com/hanatour" title="하나투어 트위터 새창으로 열림" target="_blank">하나투어</a>
+                                    <span>@hanatour · 7시간</span>
+                                    <p>선선한 <span>#가을엔</span> 트래킹이지! :) <span>#장가계</span> 달력 다운로드하고 <span>#트래킹</span>의 매력 속으로!<br/><a href="http://blog.hanatour.com/220849935829" title="새창으로 열림" target="_blank">blog.hanatour.com/220849935829</a></p>
+                                    <img src="images/twitphoto2.jpg" alt="11월에는 장가계 달력"/>
+                                </li>
+                                <li>
+                                    <a class="twitId" href="https://twitter.com/hanatour" title="하나투어 트위터 새창으로 열림" target="_blank">하나투어</a>
+                                    <span>@hanatour · 7시간</span>
+                                    <p>코앞으로 다가온 <span>#할로윈</span>! <span>#미국</span>에서 할로윈을 즐겨보는 건 어떠세요? 괴물들의 <span>#축제</span>로 여러분을 초대합니다!:)<br/><a href="http://http://blog.hanatour.com/220847526052" title="새창으로 열림" target="_blank">blog.hanatour.com/220847526052 </a></p>
+                                    <img src="images/twitphoto3.jpg" alt="괴물들의 축제! 할로윈"/>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- contlist2 e -->
+                        <h4><a href="javascript:void(0)" class="tab tab2">인스타그램</a></h4>
+                        <div class="contlist">
+                            <ul class="insta">
+                                <li class="insta1">
+                                    <a href="https://www.instagram.com/hanatour_insta/" title="하나투어 인스타그램 새창으로 열림" target="_blank">hanatour_insta</a>
+                                    <img src="images/follow.jpg" alt="팔로우"/>
+                                    <p class="good">좋아요 38개</p>
+                                    <p>느낌있는 홍콩의 밤거리~! 멋진야경, 즐거운쇼핑, 흥겨운음악 젊음을 즐기시기에 이보다 더 좋은곳은 없겠죠? <br/> <span>#하나투어 #홍콩여행 #홍콩사진 #홍콩 #맞팔 #소통 #해외여행</span></p>
+                                </li>
+                                <li class="insta2">
+                                    <a href="https://www.instagram.com/hanatour_insta/" title="하나투어 인스타그램 새창으로 열림" target="_blank">hanatour_insta</a>
+                                    <img src="images/follow.jpg" alt="팔로우"/>
+                                    <p class="good">좋아요 21개</p>
+                                    <p>우리나라에도 이렇게 이쁜곳이 있답니다~ 제주도 주상절리 꼭 가보세요~^# <br/> <span>#여행 #제주도 #주상절리 #맞팔 #소통 #예쁜배경 #하나투어</span></p>
+                                </li>
+                                <li class="insta3">
+                                    <a href="https://www.instagram.com/hanatour_insta/" title="하나투어 인스타그램 새창으로 열림" target="_blank">hanatour_insta</a>
+                                    <img src="images/follow.jpg" alt="팔로우"/>
+                                    <p class="good">좋아요 29개</p>
+                                    <p>세상에서 가장 아름다운 석양을 볼 수있는 곳!! 말레이시아의 코타키나발루<br/> <span>#코타키나발루 #석양 #말레이시아 #여행 #동남아 #하나투어 #패키지여행 #10월 #추천여행 #소통 #맞팔</span></p>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- contlist3 e -->
+                    </div>
+                </div>
+                <!-- sns e -->
+            </div>
+            <!-- contentBottom e -->
+        </div>
+        <!-- content e -->
+        
+       <? include "common/mainfoot.html" ?>
+                
+	<div id="showimage" style="z-index:99;position:absolute;width:323px;left:100px;top:160px;">
+  	<script language="javascript" type="text/javascript">
+    function closeWin(){
+       var chk = document.getElementById('Notice')
+       if ( chk.checked ) {
+             setCookie( "Notice", "done" , 1); //1이란 숫자는 1일간 안보임을 뜻합니다. 날짜는 자신에 맞게 수정하세요
+        }
+    }
+   if ( getCookie( "Notice" ) == "done" ) {
+       hidebox();
+   }
+    </script>
+        <div>
+            <img src="popup/pop.png" alt="본 사이트는 상업적 목적이 아닌 개인 포트폴리오 용도로 만들어졌습니다. 홈페이지의 일부 내용과 기타 이미지 등은 그 출처가 따로 있음을 밝힙니다." />
+            <p style="font-size:12px;text-align:right;color:#666;background-color:#FFFFFF;padding:3px;"><input type="checkbox" name="Notice" id="Notice" value="" title="오늘은 이창을 열지 않음 선택상자" style="vertical-align:text-bottom;margin-right:2px;" /><label for="Notice">오늘은 이창을 열지 않음.</label><a style="cursor:pointer"  onclick="closeWin();hidebox();return false;"> [close] </a></p>
+        </div>
+	</div>
+</body>
+</html>
