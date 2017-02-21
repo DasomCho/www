@@ -1,0 +1,20 @@
+/* CSS Document */
+
+.leftNav .leftMenu li .current{ background: url(../common/images/sub2_menu1_h.jpg);} 
+
+.titleArea h2{ width:110px;height:28px; background:url(../images/content1/heading.jpg)}
+.titleArea p{ width:131px;height:14px; background:url(../images/content1/text.jpg);}
+
+.contentArea .top{margin-bottom: 50px}
+.contentArea p{line-height: 1.7em; letter-spacing: -0.03em; }
+.contentArea .toptext{ border-bottom: 1px solid #ccc; padding-bottom: 40px; margin-bottom: 40px; font-size:1.1em;}
+.contentArea ul{overflow: hidden; margin:0 10px; }
+.contentArea ul li{ float: left; width:336px; height: 160px; margin:0 20px 80px 0 ; padding:0 7px 250px 7px; color: #666 }
+.contentArea ul .last{margin-right: 0}
+.contentArea ul li .text{margin:20px 0;}
+
+.contentArea ul .travel{background: url(../images/content1/travelimg.jpg) bottom no-repeat;}
+.contentArea ul .hotel{background: url(../images/content1/hotelimg.jpg) bottom no-repeat;}
+.contentArea ul .duty{background: url(../images/content1/dutyimg.jpg) bottom no-repeat;}
+.contentArea ul .fnb{background: url(../images/content1/fnbimg.jpg) bottom no-repeat;}
+

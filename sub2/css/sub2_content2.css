@@ -1,0 +1,45 @@
+/* CSS Document */
+
+.leftNav .leftMenu li .current{ background: url(../common/images/sub2_menu2_h.jpg);} 
+
+.titleArea h2{ width:87px;height:28px; background:url(../images/content2/heading.jpg)}
+.titleArea p{ width:110px;height:14px; background:url(../images/content2/text.jpg);}
+
+.contentArea .fancyBox{ overflow: hidden; margin: 40px 20px; }
+.contentArea .fancyBox h3{width:220px; height:220px; position: relative; overflow: hidden;  float: left; margin: 0 20px 20px 0;}
+.contentArea .fancyBox .last{ margin-right:0 }
+.contentArea .fancyBox .business{ background:url(../images/content2/img1.jpg);  }
+.contentArea .fancyBox .youth{ background:url(../images/content2/img2.jpg) ; }
+.contentArea .fancyBox .itc{ background:url(../images/content2/img3.jpg);}
+.contentArea .fancyBox .media{ background:url(../images/content2/img4.jpg); }
+.contentArea .fancyBox .tourist{ background:url(../images/content2/img5.jpg); }
+.contentArea .fancyBox .jeju{ background:url(../images/content2/img6.jpg); }
+.contentArea .fancyBox .tour{ background:url(../images/content2/img7.jpg); }
+.contentArea .fancyBox .cj{ background:url(../images/content2/img8.jpg); }
+.contentArea .fancyBox .web{ background:url(../images/content2/img9.jpg); }
+.contentArea .fancyBox a{display: block; width:220px; height:220px; }
+.contentArea .fancyBox h3 span{ display: block; width: 220px; height:220px; background:#666; filter:alpha(opacity=60);opacity:0.6;-moz-opacity:0.6; position: absolute; top:0; display: none}
+.contentArea .fancyBox h3 img{position: absolute; top:101px; z-index: 10}
+
+#dialogs div{ position:relative;  }
+#dialog1{  }
+#dialog1 dl{ width:200px; height:260px; background:#fff; filter:alpha(opacity=80);opacity:0.8;-moz-opacity:0.8; position:absolute; left:0; top:0; padding: 20px; margin:30px;}
+#dialog1 dl dd {margin:20px 0}
+#dialog2 dl{ width:200px; height:260px; background:#fff; filter:alpha(opacity=80);opacity:0.8;-moz-opacity:0.8; position:absolute; left:0; top:0; padding: 20px; margin:30px;}
+#dialog2 dl dd {margin:20px 0}
+#dialog3 dl{ width:200px; height:260px; background:#fff; filter:alpha(opacity=80);opacity:0.8;-moz-opacity:0.8; position:absolute; left:0; top:0; padding: 20px; margin:30px;}
+#dialog3 dl dd {margin:20px 0}
+#dialog4 dl{ width:200px; height:260px; background:#fff; filter:alpha(opacity=80);opacity:0.8;-moz-opacity:0.8; position:absolute; left:0; top:0; padding: 20px; margin:30px;}
+#dialog4 dl dd {margin:20px 0}
+#dialog5 dl{ width:200px; height:260px; background:#fff; filter:alpha(opacity=80);opacity:0.8;-moz-opacity:0.8; position:absolute; left:0; top:0; padding: 20px; margin:30px;}
+#dialog5 dl dd {margin:20px 0}
+#dialog6 dl{ width:200px; height:260px; background:#fff; filter:alpha(opacity=80);opacity:0.8;-moz-opacity:0.8; position:absolute; left:0; top:0; padding: 20px; margin:30px;}
+#dialog6 dl dd {margin:20px 0}
+#dialog7 dl{ width:200px; height:260px; background:#fff; filter:alpha(opacity=80);opacity:0.8;-moz-opacity:0.8; position:absolute; left:0; top:0; padding: 20px; margin:30px;}
+#dialog7 dl dd {margin:20px 0}
+#dialog8 dl{ width:200px; height:260px; background:#fff; filter:alpha(opacity=80);opacity:0.8;-moz-opacity:0.8; position:absolute; left:0; top:0; padding: 20px; margin:30px;}
+#dialog8 dl dd {margin:20px 0}
+#dialog9 dl{ width:200px; height:260px; background:#fff; filter:alpha(opacity=80);opacity:0.8;-moz-opacity:0.8; position:absolute; left:0; top:0; padding: 20px; margin:30px;}
+#dialog9 dl dd {margin:20px 0}
+
+
