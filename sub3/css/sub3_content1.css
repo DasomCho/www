@@ -1,0 +1,43 @@
+/* CSS Document */
+
+.leftNav .leftMenu li .current{ background: url(../common/images/sub3_menu1_h.jpg);} 
+
+.titleArea h2{width:113px; height:28px; background:url(../images/content1/heading.jpg);}
+.titleArea p{width:36px; height:14px; background:url(../images/content1/text.jpg);}
+
+.contentArea .conTop{ margin-bottom: 50px }
+.contentArea .current{ overflow:hidden; margin:0 20px 50px 20px; padding-top:50px; border-top:1px solid #999}
+.contentArea .current .left{ float:left; }
+.contentArea .current .left .leftTop{ overflow:hidden; margin-left:20px}
+.contentArea .current .left .leftTop div{float:left}
+.contentArea .current .left .leftTop p{ width:141px; height:38px; background:url(../images/content1/stock.jpg) left center no-repeat; text-indent:-9999px; margin-right:30px; float:left }
+.contentArea .current .left .leftTop .value{ overflow:hidden; background:url(../images/content1/bar.jpg) 66px center no-repeat; margin-bottom:50px; }
+.contentArea .current .left .leftTop .value dl{ float:left; margin-right:35px }
+.contentArea .current .left .leftTop .value dl dt{ margin-bottom:6px }
+.contentArea .current .left .leftTop .value dl dd{ color:#ea2725; }
+
+.contentArea .current .left .leftBottom table{ width:338px;border-top:1px solid #666; }
+.contentArea .current .left .leftBottom table tr{ }
+.contentArea .current .left .leftBottom table tr th{ padding:10px; border-bottom:1px solid #666 ;font-weight:100; }
+.contentArea .current .left .leftBottom table tr td{ border-bottom:1px solid #ccc; text-align:center; padding:10px}
+
+.contentArea .current .right{ float:left; overflow:hidden; margin-left:20px}
+.contentArea .current .right dl{ width:90px; float:left ; margin-left:20px; text-align:center; margin-top: 10px }
+.contentArea .current .right dl dt{ font-size:1.1em; font-weight:bold; margin-bottom:15px }
+.contentArea .current .right dl dd{ text-align:center; }
+.contentArea .current .right dl dd span{ color:#ea2725; }
+.contentArea .current .right dl .arrow{ width:90px; height:35px; background:url(../images/content1/arrow.png); color:#fff; font-weight:bold; padding-top:33px; margin-bottom:18px}
+
+.contentArea .info{ margin-bottom:50px}
+.contentArea .info table{ width:700px; font-size:0.9em; margin-left:20px}
+.contentArea .info table tbody{border-top:1px solid #666;}
+.contentArea .info table tr{ border-bottom:1px solid #ccc}
+.contentArea .info table tr th{ width:71px;  padding:10px; font-weight:100}
+.contentArea .info table tr td{ width:55px; background:#e5eaee; height:27px; padding:10px; text-align:right}
+
+
+
+
+
+
+

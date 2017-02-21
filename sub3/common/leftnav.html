@@ -1,0 +1,29 @@
+<script type="text/javascript">
+      $(document).ready(function() {
+          var num = '<?=$_GET['num']?>';
+          
+          if(num==1){
+              $('.leftMenu .menu1 a').addClass('current');
+          }else if(num==2){
+              $('.leftMenu .menu2 a').addClass('current');
+          }
+       });
+</script>
+
+		<div class="main">
+        	<img src="common/images/main.jpg" alt="main visual" />
+        </div>
+        <!-- main e -->
+ 
+        <div class="container">
+            <div class="leftNav">
+                <h3>투자정보</h3>
+                <div class="leftMenu">
+                    <ul>
+                        <li class="menu1"><a href="sub3_1.html">주가정보</a></li>
+                        <li class="menu2"><a href="sub3_2.html">재무정보</a></li>
+                    </ul>
+               </div>
+               <!-- leftMenu e -->
+            </div>
+            <!-- leftNav e -->

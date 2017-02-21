@@ -1,0 +1,18 @@
+/* CSS Document */
+
+.leftNav .leftMenu li .current{ background: url(../common/images/sub3_menu2_h.jpg);} 
+
+.titleArea h2{width:113px; height:28px; background:url(../images/content2/heading.jpg);}
+.titleArea p{width:129px; height:14px; background:url(../images/content2/text.jpg);}
+
+.contentArea img{ margin-bottom: 50px }
+.contentArea table{ width:740px; border-top:1px solid #666; border-bottom:1px solid #ccc;font-size:0.98em; text-align:center; margin-bottom:70px  }
+.contentArea table thead{ border-bottom:1px solid #666 }
+.contentArea table thead tr th{ padding:8px }
+.contentArea table thead .date{ border-top:1px solid #ccc}
+.contentArea table thead .date th{ width:25px; font-weight:100 }
+
+.contentArea table tbody{}
+.contentArea table tbody tr th{ height:40px; text-align:left; padding-left:20px }
+.contentArea table tbody tr .sub{  font-weight:100;   }
+.contentArea table tbody tr td{ width: 57px; color:#666; padding:5px;}
