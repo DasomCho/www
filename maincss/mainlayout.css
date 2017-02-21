@@ -1,0 +1,104 @@
+/* CSS Document */
+.visual{ width:100%; overflow:hidden; position:relative; margin-bottom:35px }
+.visual .gallery{width:2000px; height:700px; text-align:center; position:relative; left:50%; top:0; margin-left:-1000px; }
+.visual .gallery .link1,.gallery .link2,.gallery .link3,.gallery .link4,.gallery .link5{display:none}
+.visual .dock{width:230px; position:absolute; left:46%; top:620px;}
+.visual .dock span.mbutton, .ps{ margin-right:30px; cursor:pointer; 
+    display:block; float:left; width:16px; height:16px; background:url(../images/btn.png)}
+.visual .dock span.ps{background:url(../images/pause.png)}
+
+/* content */
+#content{ width:1000px; margin:0 auto; }
+#content .contentTop{ overflow:hidden; margin-bottom:35px }
+#content .video{ width:285px; float:left; margin-right:35px}
+#content .notice{ position:relative; width:358px; height:283px; float:left; margin-right:35px; border:1px solid #ccc }
+#content .notice h3{ margin:25px 0 25px 25px }
+#content .notice ul{ margin:0 25px 25px 25px}
+#content .notice li{ height:36px; padding: 0 12px 12px 13px; background:url(../images/bullet.jpg) left 6px no-repeat; font-size:1em; overflow:hidden; text-align:left }
+#content .notice li span{ color:#999; float:right }
+#content .notice .more{ display:block; position:absolute; top:24px; right:20px; overflow:hidden; width:12px; height:12px }
+#content .contentRight{ float:right }
+#content .stock { width:283px; margin-bottom:25px; border:1px solid #ccc; position:relative }
+#content .stock h3{ margin: 25px 0 17px 25px}
+#content .stock .stockCon{ margin-left:42px }
+#content .stock ul{ padding: 12px 0 25px 25px; overflow:hidden }
+#content .stock li{ width:50px; text-align:center; margin-right:10px; float:left }
+#content .stock dt{ color:#666 }
+#content .stock dd{ color:#333; text-align:center }
+#content .stock .more{ display:block; position:absolute; top:24px; right:20px; overflow:hidden; width:12px; height:12px }
+#content .quick{ width:283px; border:1px solid #ccc } 
+#content .quick ul{ margin: 15px 0; overflow:hidden }
+#content .quick li{ float:left; padding:0 22px; background:url(../images/quickbar.jpg) right center no-repeat }
+#content .quick .q3{ background:none }
+#content .quick li a{ display:block; width:50px; height:63px; text-indent:-9999px; overflow:hidden;}
+#content .quick .q1 a{ background:url(../images/quick1.jpg) }
+#content .quick .q2 a{ background:url(../images/quick2.jpg) }
+#content .quick .q3 a{ background:url(../images/quick3.jpg) }
+#content .quick .q1 a:hover{ background: url(../images/quick1_h.jpg);}
+#content .quick .q2 a:hover{ background: url(../images/quick2_h.jpg);}
+#content .quick .q3 a:hover{ background: url(../images/quick3_h.jpg);}
+#content .contentMid{ overflow:hidden }
+#content .news{ position:relative; width:678px; height:283px; float:left; margin:0 35px 35px 0; overflow:hidden; border:1px solid #ccc }
+#content .news h3{ margin:25px 0 25px 25px }
+#content .news .news_box_container{ width:678px; overflow:hidden;}
+#content .news .news_box_container li{margin:0 25px 32px 25px; overflow: hidden}
+#content .news .news_box_container li img{float: left}
+#content .news .news_box_container li dl{ width: 308px; float:left; margin-left: 26px }
+#content .news .news_box_container li span{ color:#666 ; text-align:right}
+#content .news dt a{ font-size:1.29em; letter-spacing:-1px; font-weight:bold; line-height:1.5em; }
+#content .news dd { height:110px; margin-top:10px; text-align:justify; line-height:1.7em }
+#content .news dd a:hover{ text-decoration:underline }
+#content .news .date{text-align: right; color: #999}
+#content .news span{ display: block;}
+#content .news .num{ position:absolute; top:28px; right:90px; color:#666}
+#content .news .btn{ width:52x; position:absolute; top:25px; right:25px;}
+#content .news .btn a{ width:16px; height:16px; text-indent:-9999px; overflow:hidden; float:left; margin-left:15px}
+#content .news .btn .leftBtn{ background:url(../images/left.png) }
+#content .news .btn .RightBtn{background:url(../images/right.png) }
+#content .business{ position:relative; width:285px; height:285px; margin:0 0 35px 0; float:right; overflow:hidden;}
+#content .business h3{ position:absolute; top:25px; left:25px; z-index:10 }
+#content .business .slide_gallery{position:relative; left:0; top:0; width:2280px;}
+#content .business .slide_gallery ul li{ float:left }
+#content .business span img{ cursor:pointer; }
+#content .business span .m1{ position:absolute; top: 128px; left: 22px }
+#content .business span .m2{ position:absolute; top: 128px; right:22px }
+#content .contentBottom{ overflow:hidden; margin-bottom:35px }
+#content .recruit{ width:285px; float:left; margin-right:35px; position:relative  }
+#content .recruit .shortcut{ position:absolute; top:115px; right:25px }
+#content .sns{ width:678px; height:283px; float:right; border:1px solid #ccc; position:relative }
+#content .sns h3{ margin:25px 0 25px 25px }
+#content .sns .tabs{ position: relative; }
+#content .sns .tabs .contlist{ display: none }
+#content .sns .tabs .tab{ display:block; width:30px; height: 36px; position: absolute; top:-36px; text-indent: -9999px}
+#content .sns .tabs .tab0{ background:url(../images/tab0.jpg); right:151px;}
+#content .sns .tabs .tab1{ background:url(../images/tab1.jpg); right:101px;}
+#content .sns .tabs .tab2{ background:url(../images/tab2.jpg); right:51px;}
+#content .sns ul{ height:170px; overflow-y: scroll; border-top:1px solid #ccc; margin:0 25px 30px 25px; padding:20px 37px 0 0;}
+#content .sns ul li{ margin: 0 0 30px 15px; padding:0 0 30px 50px;  overflow: hidden; border-bottom: 1px solid #ccc}
+#content .sns ul li span{ color:#999 } 
+#content .sns ul li p{margin: 10px 2px}
+#content .sns .faceId{ font-size:1.2em; font-weight:bold; color:#4862A3; float:left; margin-right:10px }
+#content .sns .face li{ background:url(../images/faceprofile.jpg) 0 0 no-repeat; }
+#content .sns .face li p a{color:#4862A3;}
+#content .sns .face li span img{ margin:2px 5px }
+#content .sns .face li p span{ color:#4862A3; }
+#content .sns .face li .img img{float: left; margin-right:19px}
+#content .sns .face li .img .last{margin-right:0;}
+#content .sns .twitId{ font-size:1.2em; font-weight:bold; color:#3B94D9; float:left; margin-right:10px }
+#content .sns .twit li{ background:url(../images/twitprofile.jpg) 0 0 no-repeat;}
+#content .sns .twit li p a{color:#3B94D9;}
+#content .sns .twit li p span{ color:#3B94D9;}
+#content .sns .insta li{padding-left: 280px; position: relative;}
+#content .sns .insta .insta1{ background:url(../images/instaphoto1.jpg) left top no-repeat;}
+#content .sns .insta .insta2{ background:url(../images/instaphoto2.jpg) left top no-repeat;}
+#content .sns .insta .insta3{ background:url(../images/instaphoto3.jpg) left top no-repeat;}
+#content .sns .insta li a{font-size:1.2em; font-weight:bold; display:block; width: 130px; height:26px; background:url(../images/instaprofile.jpg) left center no-repeat; padding:10px 0 0 48px; }
+#content .sns .insta li img{ position: absolute; top:5px; right:0;}
+#content .sns .insta li .good{ font-weight:bold; border-top: 1px solid #ccc; margin-top:15px; padding-top: 10px}
+#content .sns .insta li p span{ color:#4862A3;}
+
+
+
+
+
+
