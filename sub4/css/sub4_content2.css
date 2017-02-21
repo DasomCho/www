@@ -1,0 +1,40 @@
+/* CSS Document */
+
+.leftNav .leftMenu li .current{ background: url(../common/images/sub4_menu2_h.jpg);} 
+
+.titleArea h2{width:111px; height:28px; background:url(../images/content2/heading.jpg);}
+.titleArea p{width:96px; height:14px; background:url(../images/content2/text.jpg);}
+
+.contentArea{padding-top: 57px}
+.contentArea h3{background:url(../../common/images/bullet.jpg) no-repeat; padding-top:12px; margin-bottom: 50px; padding-left: 22px}
+.contentArea h5{padding-left: 22px; margin-bottom: 40px}
+.contentArea p{padding: 0 22px; margin-bottom:50px; letter-spacing: -0.03em; line-height: 1.6em}
+.contentArea .conFoot{float: left;}
+.contentArea .first{margin-left: 10px}
+.contentArea .con h4{margin-bottom: 20px; text-align: center}
+.contentArea .con p{ color: #666}
+
+.contentArea .con1{overflow:hidden; margin-bottom: 60px}
+.contentArea .con1 .con{width:240px; height: 150px; float: left; margin-top: 50px }
+.contentArea .text1, .text3, .text6{margin-bottom: 15px; padding-left: 22px}
+.contentArea .text2{margin-left:72px;}
+
+.contentArea .btn{clear:both; display: block; width:410px; padding:25px 0 25px 330px; background: url(../images/content2/more.jpg) 300px center no-repeat; color: #c95074; ; font-weight: bold; cursor: pointer}
+.contentArea .content{display:none}
+
+.contentArea .con2{overflow: hidden; margin-bottom: 60px}
+.contentArea .con2 h4{padding-left: 22px; margin-bottom: 20px}
+.contentArea .con2 ol{width:700px; background: url(../images/content2/applyimg.jpg) no-repeat; padding-top: 70px; margin:0 20px 50px 20px; overflow: hidden;}
+.contentArea .con2 ol li{width:140px; float: left; text-align: center; color: #666}
+.contentArea .con2 .content{margin-top: 50px}
+
+.contentArea .con3{overflow: hidden; margin-bottom: 60px}
+.contentArea .con3 ul{overflow: hidden; margin-bottom:50px }
+.contentArea .con3 ul li{ float: left; width:240px; text-align: center; padding-top: 70px; color: #666 }
+.contentArea .con3 ul .kid{background: url(../images/content2/kid.jpg) center top no-repeat}
+.contentArea .con3 ul .eco{background: url(../images/content2/eco.jpg) center top no-repeat}
+.contentArea .con3 ul .town{background: url(../images/content2/town.jpg) center top no-repeat}
+
+.contentArea .con4{overflow:hidden; margin-bottom: 60px}
+.contentArea .con4 .con{width:240px; height: 200px; float: left;}
+

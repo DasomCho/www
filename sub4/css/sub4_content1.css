@@ -1,0 +1,16 @@
+/* CSS Document */
+
+.leftNav .leftMenu li .current{ background: url(../common/images/sub4_menu1_h.jpg);} 
+
+.titleArea h2{width:113px; height:28px; background:url(../images/content1/heading.jpg);}
+.titleArea p{width:114px; height:14px; background:url(../images/content1/text.jpg);}
+
+.contentArea div{ overflow:hidden; margin:100px 20px }
+.contentArea div dl dt{ background:url(../../common/images/bullet.jpg) left top no-repeat; padding:12px 0 0 22px; margin-bottom:30px}
+.contentArea div dl dd{ line-height:1.7em}
+.contentArea .con1 dl{ background:url(../images/content1/con1img.jpg) 480px center no-repeat; padding-right:300px}
+.contentArea .con2 dl{ background:url(../images/content1/con2img.jpg) right center no-repeat; padding-right:300px; height:244px}
+
+.contentArea .con3 dl dt{  margin-bottom:80px }
+.contentArea .con3 ul{width:630px; height:146px; background:url(../images/content1/con3img.jpg); margin:30px 55px}
+.contentArea .con3 ul li{width:1px; height:1px; position:relative; left:-9999px; top:-9999px; }
