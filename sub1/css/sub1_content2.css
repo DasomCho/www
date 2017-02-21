@@ -1,0 +1,29 @@
+/* CSS Document */
+
+.leftNav .leftMenu li .current{ background: url(../common/images/sub1_menu2_h.jpg);} 
+
+.titleArea h2{ width:55px;height:28px; background:url(../images/content2/heading.jpg)}
+.titleArea p{ width:115px;height:14px; background:url(../images/content2/text.jpg);}
+
+.contentArea .conTop{margin-bottom: 80px}
+.contentArea .tabs{ position:relative; width:740px; overflow:hidden;  }
+.contentArea .bar{ display:block; width:1px; height: 22px; position: absolute; top:0; left:157px ; background:url(../images/content2/tabBar.jpg) }
+.contentArea .tabs h3 .tab{ display:block; width:182px; height:22px; text-indent:-999px; overflow:hidden; position:absolute; } 
+.contentArea .tabs h3 .tab0{background:url(../images/content2/tab0.jpg) no-repeat ; left:485px; top:0}
+.contentArea .tabs h3 .tab1{background:url(../images/content2/tab1.jpg) no-repeat; left:303px; top:0}
+.contentArea .tabs h3 .tab2{background:url(../images/content2/tab2.jpg) no-repeat ; left:121px; top:0}
+.contentArea .tabs .contlist{ display:none; overflow: hidden; margin-top: 120px}
+
+.contentArea dl{ overflow: hidden; margin-left:20px; }
+.contentArea dt{ width:130px; float: left; border-top: 2px solid #c95074; padding: 20px 0 0 15px; margin-right: 30px;}
+.contentArea .line1 dt{ height: 100px}
+.contentArea .line2 dt{ height: 140px}
+.contentArea .line4 dt{ height: 220px}
+.contentArea .line5 dt{ height: 260px}
+.contentArea .line6 dt{ height: 300px}
+.contentArea .line8 dt{ height: 380px}
+.contentArea dd{ width:475px; float: left; padding: 0 20px 15px 20px ; position: relative;}
+.contentArea dd span{position: absolute; left:-80px; color: #666; letter-spacing: 0.1em}
+.contentArea .first{border-top: 1px solid #ccc; margin-top: 1px; padding-top: 24px; }
+
+

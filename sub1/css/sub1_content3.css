@@ -1,0 +1,11 @@
+/* CSS Document */
+
+.leftNav .leftMenu li .current{ background: url(../common/images/sub1_menu3_h.jpg);} 
+
+.titleArea h2{width:60px;height:28px; background:url(../images/content3/heading.jpg)}
+.titleArea p{width:129px;height:14px; background:url(../images/content3/text.jpg);}
+
+.contentArea .ceo{ margin-left: 70px}
+.contentArea .text{ margin:55px 70px }
+.contentArea .text p{ font-size:1.1em; line-height:1.6em; letter-spacing: -0.03em}
+.contentArea .text .paragraph{ text-indent:12px; margin-top: 20px}

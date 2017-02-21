@@ -1,0 +1,35 @@
+<script type="text/javascript">
+      $(document).ready(function() {
+          var num = '<?=$_GET['num']?>';
+          
+          if(num==1){
+              $('.leftMenu .menu1 a').addClass('current');
+          }else if(num==2){
+              $('.leftMenu .menu2 a').addClass('current');
+          }else if(num==3){
+              $('.leftMenu .menu3 a').addClass('current');
+          }else if(num==4){
+              $('.leftMenu .menu4 a').addClass('current');
+          }
+       });
+</script>
+
+<div class="main">
+  <img src="common/images/main.jpg" alt="main visual" />
+</div>
+<!-- main e -->
+ 
+<div class="container">
+   <div class="leftNav">
+      <h3>회사소개</h3>
+      <div class="leftMenu">
+          <ul>
+              <li class="menu1"><a href="sub1_1.html">하나투어 그룹</a></li>
+              <li class="menu2"><a href="sub1_2.html">연혁</a></li>
+              <li class="menu3"><a href="sub1_3.html">CEO</a></li>
+              <li class="menu4"><a href="sub1_4.html">오시는 길</a></li>
+          </ul>
+     </div>
+     <!-- leftMenu e -->
+</div>
+<!-- leftNav e -->

@@ -1,0 +1,60 @@
+/* CSS Document */
+
+
+.leftNav .leftMenu li .current{ background: url(../common/images/sub1_menu1_h.jpg);} 
+
+.titleArea h2{width:177px;height:28px; background:url(../images/content1/heading.jpg)}
+.titleArea p{width:151px;height:14px; background:url(../images/content1/text.jpg);}
+
+.contentArea{overflow:hidden; position: relative;}
+
+.contentArea .slide{ overflow: hidden; }
+.contentArea .slide a{ display: block; width:76px; height:33px; text-indent:-9999px; overflow:hidden; position: absolute; float: left; }
+.contentArea .scroll span{ display: block; width:1px; height: 33px; background: url(../images/content1/slidebar.jpg) right top no-repeat; float: right; }
+
+.contentArea .slide1 { background: url(../images/content1/slide1.jpg) no-repeat; top:57px; left:260px;}
+.contentArea .slide2 { background: url(../images/content1/slide2.jpg) no-repeat; top:57px; left:370px;}
+.contentArea .slide3 { background: url(../images/content1/slide3.jpg) no-repeat; top:57px; left:480px;}
+
+.contentArea .slide1:hover{ background: url(../images/content1/slide1_h.jpg) no-repeat; top:57px; left:260px; }
+.contentArea .slide2:hover{ background: url(../images/content1/slide2_h.jpg) no-repeat; top:57px; left:370px;}
+.contentArea .slide3:hover{ background: url(../images/content1/slide3_h.jpg) no-repeat; top:57px; left:480px;}
+
+
+.contentArea .topText{ margin: 120px 144px 40px 143px; }
+
+.contentArea p{line-height: 1.6em; letter-spacing: -0.03em; }
+.contentArea dd{line-height: 1.6em; letter-spacing: -0.03em; }
+.contentArea div h3{ padding:50px 0 30px 353px; margin-top: 30px}
+
+.contentArea #intro, #vision, #ci{ margin:50px 0; overflow:hidden }
+.contentArea #intro h3{ padding:30px 0 50px 353px}
+.contentArea #intro p{ width:301px; float:left; margin:0 30px 70px 54px;}
+.contentArea #intro .introRight{ margin:0 54px 0 0;}
+.contentArea table{ width: 632px; margin-left: 54px; border-top:1px solid #666; }
+.contentArea table tr{border-bottom:1px solid #ccc;}
+.contentArea table tr th{ width:100px; padding:0 10px; text-align:left; color:#666;}
+.contentArea table tr td{ width:196px; padding: 10px 0;}
+
+.contentArea #vision h3{ border-top: 1px solid #ccc; }
+.contentArea #vision p{ margin:0 187px 50px 187px;}
+.contentArea #vision div{ margin:0 54px; overflow:hidden } 
+.contentArea #vision div dl{ width:134px; float:left; margin-right:32px; }
+.contentArea #vision div .last{ margin-right:0}
+.contentArea #vision div dl dt{ margin-left:10px; width:108px; height:99px; font-size:1.2em; font-weight:bold; text-align:center; text-indent:-9999px; }
+.contentArea #vision div dl .global{ background:url(../images/content1/globe.jpg) top center no-repeat }
+.contentArea #vision div dl .number1{ background:url(../images/content1/number1.jpg) top center no-repeat }
+.contentArea #vision div dl .tourism{ background:url(../images/content1/tourism.jpg) top center no-repeat }
+.contentArea #vision div dl .group{ background:url(../images/content1/group.jpg) top center no-repeat }
+.contentArea #vision div dl dd{ margin-top: 30px; color: #666}
+
+.contentArea #ci h3{ border-top: 1px solid #ccc; }
+.contentArea #ci .ciTop{ margin:0 140px }
+.contentArea #ci .ciTop dt{ margin:0 123px; padding-top:85px; background:url(../images/content1/hnt.jpg) top center no-repeat }
+.contentArea #ci  dd{ margin-top:40px; }
+.contentArea #ci .ciTop dd span{ color:#B60050 }
+.contentArea #ci .color{ width:192px; float:left; margin:65px 58px 0 140px }
+.contentArea #ci dt{ text-align: center; font-weight: bold; font-size: 1.1em; letter-spacing: -0.03em;}
+.contentArea #ci .logo{  width:192px; float:left; margin:65px 95px 0 0; }
+.contentArea #ci .logo dd{ padding:20px 0 3px 0;}
+
