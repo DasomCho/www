@@ -1,0 +1,210 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name = "format-detection" content = "telephone=no"/>
+
+<title>하나투어::recruit</title>
+
+<link rel="apple-touch-icon-precomposed" href="app_icon.png">
+<link rel="apple-touch-startup-image" href="startup.png">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/sub4.css">
+
+<script src="https://use.fontawesome.com/bccb306c59.js"></script>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/jquery-migrate-1.4.1.min.js"></script>
+<script src="js/prefixfree.min.js"></script>  
+<script src="js/subheader.js"></script>
+<script src="js/notice.js"></script>
+<script src="js/easing.js"></script>
+<script src="js/scrollmove.js"></script>
+<script src="js/tab2.js"></script>
+<script src="js/qna.js"></script>
+<script>
+  // <![CDATA[
+  try {
+   window.addEventListener('load', function(){
+    setTimeout(scrollTo, 0, 0, 1); 
+   }, false);
+  } 
+  catch(e) {}
+  // ]]>
+ </script>
+<!--[if lt IE 9]> 
+    <script src="js/html5shiv.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+    <script src="js/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+    <? include "head.html" ?>
+    
+      </div>
+        <!-- headerWrap e -->
+    <div class="tabs">     
+        <h3><a href="#" class="tab tab1">입사지원</a></h3> 
+        <article class="mainCon">
+          <img class="image1" src="images/applyx2.png" alt="">
+          <section class="apply">
+              <div id="applyForm">
+              	  <h4>Company<br/>application</h3>
+                  <form action="form" method="post">
+                      <table summary="입사지원양식">
+                          <caption>입사지원</caption>
+                          <tr class="area">
+                              <th scope="row">지원분야</th>
+                              <td>
+                                  <input type="radio" id="opt1" name="opt" checked>
+                                  <label for="opt1">영업</label>
+                                  <input type="radio" id="opt2" name="opt">
+                                  <label for="opt2">홍보</label>
+                                  <input type="radio" id="opt3" name="opt">
+                                  <label for="opt3">마케팅</label>
+                                  <br/>
+                                  <input type="radio" id="opt4" name="opt">
+                                  <label for="opt4">디자인</label>
+                                  <input type="radio" id="opt4" name="opt">
+                                  <label for="opt4">R&amp;D</label>
+                              </td>
+                          </tr>
+                          <tr class="name">
+                              <th scope="row">
+                                  <label for="name">이름</label></th>
+                              <td>
+                                  <input type="text" id="name" name="name" maxlength="10" class="inputbox01" required/>
+                              </td>
+                          </tr>
+                          <tr class="address">
+                              <th scope="row">
+                                  <label for="address">주소</label></th>
+                              <td>
+                                  <input type="text" id="address" name="address" class="inputbox01" required/>
+                                  <input type="text" id="address" name="address" class="inputbox01 second" />
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">
+                                <label for="file1">이력서</label>
+                              </th>
+                              <td>
+                                <input type="file" id="file1" name="file1">        
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">
+                                  <label for="file2">자기<br/>소개서</label>
+                              </th>
+                              <td>
+                                  <input type="file" id="file2" name="file2">        
+                              </td>
+                          </tr>
+                          <tr class="phone">
+                              <th scope="row">
+                                  <label for="phone">휴대전화</label></th>
+                              <td>
+                                  <select id="phone" name="phone" tabindex="2" title="휴대폰 첫째자리">
+                                      <option value="0">선택</option>
+                                      <option value="010">010</option>
+                                      <option value="011">011</option>
+                                      <option value="017">017</option>
+                                      <option value="018">018</option>
+                                      <option value="019">019</option>
+                                  </select>
+                                  -
+                                  <input class="phone2" type="text" name="phone2" title="휴대폰 중간자리" maxlength="4" tabindex="1" class="inputbox01" required />
+                                  -
+                                  <input class="phone2" type="text" name="phone3" title="휴대폰 끝자리" maxlength="4" tabindex="1"  class="inputbox01"required /><br />
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">
+                                  <label for="email">E-mail</label></th>
+                              <td>
+                                  <input type="text" id="email" title="이메일 아이디" maxlength="15" tabindex="1"  class="inputbox01" required />@
+                                  <input type="text" size=13 name="emailAccount" maxlength="15" title="이메일 계정" tabindex="1"
+                                  class="inputbox01" required />
+                                  <select name="emailselect" tabindex="2" class="inputbox01 select">
+                                      <option value="0">직접입력</option>
+                                      <option value="naver.com">naver.com</option>
+                                      <option value="daum.net">daum.net</option>
+                                      <option value="gmail.com">gmail.com</option>
+                                      <option value="nate.com">nate.com</option>
+                                      <option value="hotmail.com">hotmail.com</option>
+                                      <option value="etc">기타</option>
+                                  </select>
+                              </td>
+                          </tr>
+                          <tr class="content">
+                              <th scope="row">
+                                  <label for="details" >내용</label>
+                              </th>
+                              <td>
+                                  <textarea class="inputbox01" id="details" name="details" rows="5" cols="30" maxlength="2000" >내용은 2,000자 까지만 등록 가능합니다.
+                                  </textarea>
+                              </td>
+                          </tr>
+                          <tr>
+                              <td colspan="2" class="button">
+                                  <input class="button1" type="submit" id="ok" name="sumitbn" value="제출" />
+                                  <input class="button2" type="reset" id="cancel" name="reset" value="취소" />
+                              </td>
+                          </tr>
+                      </table>
+                  </form>
+              </div>
+        </section>
+      </article>
+      <!-- article e -->
+        <h3><a href="#" class="tab tab2">Q&amp;A</a></h3>
+        <article class="mainCon">
+        	<section class="qna">
+	        	<div class="conBox"></div>
+	        	<h4>채용에 관해<br/>궁금하신가요?</h4>
+	        	<img class="image2" src="images/qna.png" alt=""/>
+	            <a class="all" href="#">모두열기</a>
+                <ul>  
+                    <li class="article hide">  
+                        <p class="q"><a class="trigger" href="#a1" >휴대전화 본인인증 또는 아이핀 본인인증시 "비정상적인 접근입니다.!!" 라는 메시지가 나타납니다.</a></p>  
+                        <p class="a" >1. Internet Explorer 메뉴 모음에서 인터넷 옵션 메뉴를 누릅니다.<br/>2. 개인정보 탭을 클릭합니다.<br/>3. 고급 버튼을 클릭합니다.<br/>4. 자동으로 쿠키 처리 안함 체크, 현재 사이트의 쿠키 허용(A) 선택, 링크된 사이트의 쿠키 허용(C) 선택, 항상 세션에 쿠키허용(W)을 체크 합니다.<br/><br/>위와 같이 설정 후, 다시 인증 하시기 바랍니다.</p>  
+                    </li> 
+                    <li class="article hide">  
+                        <p class="q"><a class="trigger" href="#a2" >합격하기 위한 가장 중요한 요소는 무엇인지요?</a></p>  
+                        <p class="a" >㈜하나투어는 대한민국을 대표하는 여행사인 만큼, 여행업에 적합한 서비스 마인드와 글로벌 마인드를 충분히 갖추고 있는지의 여부를 중요한 판단 기준으로 삼고 있습니다.</p>  
+                    </li> 
+                    <li class="article hide">  
+                        <p class="q"><a class="trigger" href="#a3" >지원서는 어떻게 접수하는지요?</a></p>  
+                        <p class="a" >각 채용공고에 따라 온라인 제출 또는 오프라인(방문 및 우편접수) 등을 명시하고 있습니다. 당사 기업홈페이지에 공지된 채용공고의 설명을 참조하시어 그에 적절한 지원방법을 선택하시기 바랍니다.</p>  
+                    </li> 
+                    <li class="article hide">  
+                        <p class="q"><a class="trigger" href="#a4" >여권 사본은 꼭 제출 하여야 하나요? 현재 없는 경우는 언제까지 제출하면 되나요?</a></p>  
+                        <p class="a" >㈜하나투어는 대한민국 대표 여행사로서, 우수한 인재의 확보와 양성의 중요성을 인식하여 교육훈련 부문의 투자를 점차 확대해 나아가고 있으며, 현재 공채 신입사원을 대상으로 입사와 동시에 국내에서는 물론 국외에서도 신입사원 입문교육을 실시하고 있습니다. 또한, 장차 여행업에 종사할 사람에게 여권의 소지는 기본중의 기본이라 할 수 있겠습니다.<br/><br/>입사지원 시, 여권사본을 제출서류로 명시되어 있는지의 여부를 우선 확인 하시기 바라며, 명시가 되어 있을 경우, 여권의 사진과 여권번호가 기재되어 있는 부분의 복사본을 첨부하시기 바라며, 현재 여권이 없는 경우는 신규여권접수증 사본을 필히 첨부하여 주시기 바랍니다. 미 제출 시, 신입사원 입문교육과정을 이수할 수 없으며, 입사는 자동으로 취소됩니다.</p>  
+                    </li> 
+                    <li class="article hide">  
+                        <p class="q"><a class="trigger" href="#a5" >제출하는 첨부서류는 어떤 것이 있나요?</a></p>  
+                        <p class="a" >최종학력증명서, 성적증명서, 공인어학성적표, 경력증명서 등 입사지원서에 기재한 사항은 이에 대한 증빙서류를 제출하셔야 인정이 됩니다.<br/><br/>제출서류 제출에 대한 안내는 각 전형별로 공지하고 있습니다.</p>  
+                    </li> 
+                    <li class="article hide">  
+                        <p class="q"><a class="trigger" href="#a6" >과거 지원했다 탈락했던 경우에 다시 지원해도 되는지요?</a></p>  
+                        <p class="a" >자격요건을 충족하셨다면 물론 가능합니다. <br/><br/>과거 지원 유무에 따른 이익 또는 불이익은 전혀 없습니다.</p>  
+                    </li> 
+                    <li class="article hide">  
+                        <p class="q"><a class="trigger" href="#a7" >어학성적은 어떻게 반영되는지요?</a></p>  
+                        <p class="a" >어학성적에 따른 지원제한은 없습니다.<br/><br/>그러나, 업종의 특성상 어학능력은 채용의 중요한 판단기준이 되며, 탁월한 어학능력은 가점사항이 됩니다. 개인별 어학능력은 TOEIC점수 기준으로 산정되며, 이와 더불어 면접 시 실시되는 영어 Interview를 통해 외국어 능력을 종합적으로 평가하게 됩니다. <br/><br/>또한, 영어 이외의 중국어, 일본어, 독어, 불어, 스페인어 등의 제2외국어는 취득의 난이도, 희소성, 필요성 등과 개인별 어학능력 심화도를 고려하여 평가됩니다.</p>  
+                    </li> 
+                </ul>
+	        </section>
+        </article>
+    </div>
+    <? include "foot.html" ?>
+    
+    </div>
+    <!-- wrap e -->
+</body>
+</html>
