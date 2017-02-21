@@ -1,0 +1,203 @@
+<?
+    session_start();
+
+    @extract($_POST);
+    @extract($_GET);
+    @extract($_SESSION);
+
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>홍보센터::공지사항</title>
+<link href="../common/css/common.css" type="text/css" rel="stylesheet" />
+<link href="common/css/sub5common.css" type="text/css" rel="stylesheet" />
+<link href="css/sub5_content1.css" type="text/css" rel="stylesheet" />
+
+<script language="javascript" type="text/javascript" src="../common/js/jquery-1.8.3.min.js"></script>
+<script language="javascript" type="text/javascript" src="../common/js/fullnav.js"></script>
+<script language="javascript" type="text/javascript" src="../common/js/family.js"></script>
+<script language="javascript" type="text/javascript" src="../common/js/move-top.js"></script>
+<script language="javascript" type="text/javascript" src="../common/js/scrollmove.js"></script>
+<script language="javascript" type="text/javascript" src="../common/js/easing.js"></script>
+</head>
+    <?
+        include "../common/dbconn.php";
+
+        if(!$scale){
+        $scale=10;  // 한 화면에 표시되는 글 수
+        }
+
+        if ($mode=="search") //검색을 통한 목록보기라면
+        {
+            if(!$search) //검색창에 아무것도 입력 안했다면
+            {
+            echo("
+            <script>
+            window.alert('검색할 단어를 입력해 주세요!');
+            history.go(-1);
+            </script>
+            ");
+            exit;
+            }
+
+            $sql = "select * from greet where $find like '%$search%' order by num desc"; //$find: 검색할 필드명
+        }
+        else //일반 목록보기라면
+        {
+            $sql = "select * from greet order by num desc"; //전체 필드를 내림차순으로 가져옴
+        }
+
+        $result = mysql_query($sql, $connect);
+
+        $total_record = mysql_num_rows($result); // 전체 글 수
+
+        // 전체 페이지 수($total_page) 계산 
+        if ($total_record % $scale == 0) //총 개수가 10의 배수면 
+        $total_page = floor($total_record/$scale);      
+        else //10의 배수가 아니면
+        $total_page = floor($total_record/$scale) + 1; 
+
+        if (!$page)                 // 페이지번호($page)가 0 일 때
+        $page = 1;              // 페이지 번호를 1로 초기화
+
+        // 표시할 페이지($page)에 따라 $start 계산  
+        $start = ($page - 1) * $scale;  
+        //페이지당 읽어드릴 레코드의 인덱스 시작 번호
+        //$page=1 => $start=0 $page=2 => $start=10 
+
+        $number = $total_record - $start;
+    ?>
+    
+    <? include "../common/subhead.html" ?>
+        
+            <? 
+            $_GET['num']=1;
+            include "common/leftnav.html" ?>
+
+            <div id="content">
+                <div class="titleArea">
+                    <div class="lineMap">
+                        <span>HOME</span> &gt; <span>PR Center</span> &gt; <strong>공지사항</strong> 
+                    </div>
+                    <!-- lineMap e -->
+                    <h2>공지사항</h2>
+                    <p>notice</p>
+                </div>
+                <!-- titleArea e -->
+                <div class="contentArea">
+                    <!-- 목록 리스트 개수 변경 -->
+
+                    <select id="scale" name="scale" onchange="location.href='sub5_1.html?scale='+this.value">
+                        <option value=''>글개수</option>
+                        <option value='5'>5개</option>
+                        <option value='10'>10개</option>
+                        <option value='15'>15개</option>
+                    </select>
+                    
+                    <form  name="board_form" method="post" action="sub5_1.html?mode=search"> 
+                        <div id="list_search">
+                            <div id="list_search1">
+                                <select name="find">
+                                    <option value='subject'>제목</option>
+                                    <option value='content'>내용</option>
+                                    <option value='name'>이름</option>
+                                </select>
+                            </div>
+                            <div id="list_search2"><input type="text" name="search" placeholder="검색어를 입력하세요"></div>
+                            <div id="list_search3"><input type="image" src="../common/images/search.png"></div>
+                        </div>
+                    </form>
+                    <table summary="하나투어 공지사항">
+                        <caption class="hidden">하나투어 공지사항 목록</caption>
+                        <thead>
+                            <tr id="list_top_title">
+                                <th scope="col">번호</th>
+                                <th class="title" scope="col">제목</th>
+                                <th scope="col">글쓴이</th>
+                                <th scope="col">등록일</th>
+                                <th scope="col">조회</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                    <?		
+                        //총 글이 30개일때
+                        //$page=1 $start=0 $number=30 i=0~9
+                        //$page=2 $start=10 $number=20 i=10~19
+                        //$page=3 $start=20 $number=10 i=20~29
+                        for ($i=$start; $i<$start+$scale && $i < $total_record; $i++) 
+                        {
+                        mysql_data_seek($result, $i);       
+                        // 가져올 레코드로 위치(포인터) 이동  
+                        $row = mysql_fetch_array($result);       
+                        // 하나의 레코드 가져오기
+
+                        $item_num     = $row[num]; //글 수정, 삭제, 보기시 필요(primary key)
+                        $item_id      = $row[id];
+                        $item_name    = $row[name];
+                        $item_hit     = $row[hit];
+
+                        $item_date    = $row[regist_day];
+                        $item_date = substr($item_date, 0, 10); //저장 시간(연월일시분초)에서 2016-12-27(10개문자)만 가지고옴
+
+                        $item_subject = str_replace(" ", "&nbsp;", $row[subject]);//공백을 &nbsp;로 바꿈
+
+                        ?>
+                            <tr id="list_item">
+                                <td><?= $number ?></td>
+                                <td class="title"><a href="../notice/view.php?num=<?=$item_num?>&page=<?=$page?>&scale=<?=$scale?>"><?= $item_subject ?></a></td>
+                                <!--글의 제목을 누르면 글 보기 페이지로(num값으로)/ 글 보기에서 다시 목록을 눌렀을 때 그 글이 있는 목록으로 이동하기 위해 page값도 같이 넘겨줌-->
+                                <td><?= $item_name?></td>
+                                <td><?= $item_date ?></td>
+                                <td><?= $item_hit ?></td>
+                            </tr>    
+                        <?
+                        $number--;
+                        }//for문이 끝나는 곳
+                        ?>
+                        </tbody>
+
+                    </table>
+                    <div id="button">
+                       <? 
+                        if($userid) //로그인이 되어 있으면 글쓰기 버튼이 보임
+                        {
+                       ?>
+                        <a href="../notice/write_form.php?scale=<?=$scale?>"><img src="../common/images/write.jpg" alt=""/></a> 
+                        <?
+                        }
+                        ?>
+                    </div>
+                        <div id="page_button">
+                            <div id="page_num"> &lt; &nbsp;&nbsp;&nbsp;&nbsp; 
+                        <?
+                        // 게시판 목록 하단에 페이지 링크 번호 출력
+                        for ($i=1; $i<=$total_page; $i++)
+                        {
+                            if ($page == $i)     // 현재 페이지 번호 링크 안함
+                            {
+                                echo "<b> $i </b>";
+                            }
+                            else
+                            { 
+                                echo "<a href='sub5_1.html?page=$i&scale=$scale'> $i </a>";
+                            }      
+                        }
+                        ?>			
+                            &nbsp;&nbsp;&nbsp;&nbsp;&gt;
+                        </div>
+                        
+                        </div> <!-- end of page_button -->
+
+                    </div> <!-- end of list content -->
+                </div>
+                <!-- contentArea e -->
+            </div>
+            <!-- content e -->
+        </div>
+        <!-- container e -->
+        <? include "../common/subfoot.html" ?>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+/* CSS Document */
+
+.leftNav .leftMenu li .current{ background: url(../common/images/sub5_menu3_h.jpg);} 
+
+.titleArea h2{width:112px; height:28px; background:url(../images/content3/heading.jpg);}
+.titleArea p{width:166px; height:14px; background:url(../images/content3/text.jpg);}
+
+.contentArea{padding-top: 57px}
+.contentArea h3{ height:57px; margin-bottom:10px; background:url(../../common/images/bullet.jpg) left top no-repeat; padding: 12px 0 0 22px}
+.contentArea .videoBox{ width:680px; height:297px; padding:20px; position:relative; margin:0 0 20px 18px; border:1px solid #ccc;}
+.contentArea .videoBox p{ font-size:1.3em; font-weight:bold; margin-bottom:20px}
+.contentArea .videoBox .video{ width:480px;}
+.contentArea .videoBox .subTitle{ width:159px ; height:225px; background-color:#f0f0f0; position:absolute; left:520px; top: 63px; overflow:auto; padding:10px; }
+.contentArea .videoBox .subTitle p{ font-size:1em; font-weight:100}
+
+.contentArea .videoList{ position: relative; width:598px; height:172px; margin:0 0 124px 18px; overflow: hidden;padding: 0 62px;  background: #f0f0f0}
+.contentArea .videoList .slide_gallery{ position:relative; left:0; top:0; width:3296px; }
+.contentArea .videoList ul li{ width:186px; float:left; margin:20px 20px 20px 0; }
+.contentArea .videoList ul li a{display: block; width: 186px;  padding-top:114px; }
+.contentArea .videoList ul .video1{ background:url(../images/content3/video1.jpg) center top no-repeat }
+.contentArea .videoList ul .video2{ background:url(../images/content3/video2.jpg) center top no-repeat }
+.contentArea .videoList ul .video3{ background:url(../images/content3/video3.jpg) center top no-repeat }
+.contentArea .videoList ul .video4{ background:url(../images/content3/video4.jpg) center top no-repeat }
+.contentArea .videoList ul .video5{ background:url(../images/content3/video5.jpg) center top no-repeat }
+.contentArea .videoList ul .video6{ background:url(../images/content3/video6.jpg) center top no-repeat }
+.contentArea .videoList ul .video7{ background:url(../images/content3/video7.jpg) center top no-repeat }
+.contentArea .videoList ul .video8{ background:url(../images/content3/video8.jpg) center top no-repeat }
+
+.contentArea span a{display: block; width:62px; height: 172px; text-indent: -9999px}
+.contentArea .m1{ background:url(../images/content3/previmg.jpg) ; position:absolute; top:0; left:0}
+.contentArea .m2{ background:url(../images/content3/nextimg.jpg) ; position:absolute; top:0; right:0}
+.contentArea .m1:hover{ background:url(../images/content3/previmgon.jpg) }
+.contentArea .m2:hover{ background:url(../images/content3/nextimgon.jpg) }
+
+.contentArea .fancyBox {overflow: hidden; margin-left:18px;}
+.contentArea .fancyBox a{float:left; display: block; width:170px; height:240px; position: relative; margin:0 14px 14px 0;}
+.contentArea .fancyBox .last{margin-right:0}
+.contentArea .fancyBox a .poster{width:100%; height: 100%}
+.contentArea .fancyBox span{background:#333; filter:alpha(opacity=70);opacity:0.7;-moz-opacity:0.7; width:66px; height:66px; position: absolute; top:72px; left:37px; padding: 15px; display: none}
