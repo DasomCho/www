@@ -1,0 +1,38 @@
+/* CSS Document */
+
+.leftNav .leftMenu li .current{ background: url(../common/images/sub6_menu2_h.jpg);} 
+
+.titleArea h2{width:170px;height:28px; background:url(../images/content2/heading.jpg)}
+.titleArea p{width:114px;height:14px; background:url(../images/content2/text.jpg);}
+
+		
+.contentArea .conTop img{ margin-bottom:80px }
+
+.contentArea .tabs{ position:relative; width:740px; background:url(../images/content2/tabBar.jpg) 367px top no-repeat; overflow:hidden } 
+.contentArea .tabs h3 .tab{ display: block; width:88px; height:22px; text-indent:-9999px;overflow:hidden; position:absolute}
+
+.contentArea .tabs h3 .tab0{background:url(../images/content2/tab0.jpg);left:257px; top:0}
+.contentArea .tabs h3 .tab1{background:url(../images/content2/tab1.jpg);left:395px; top:0}
+
+.contentArea .tabs .contlist dl{margin: 0 20px; height:180px; margin-bottom: 120px}
+.contentArea .tabs .contlist dl dt{ width:390px; position:relative}
+.contentArea .tabs .contlist dl dt img{position:absolute; }
+.contentArea .tabs .contlist dl dd{ font-size:1.1em; line-height:1.6em; letter-spacing: -0.03em; margin-top: 40px; color:#555 }
+
+.contentArea .tabs .contlist{ margin-top:120px; display:none; }
+.contentArea .tabs .contlist .con1, .con2, .con3, .con4, .con5, .con6{ padding:3px 295px 0 0;}
+.contentArea .tabs .contlist .con1{ background:url(../images/content2/con1_img.jpg) right top no-repeat}
+.contentArea .tabs .contlist .con2{ background:url(../images/content2/con2_img.jpg) right top no-repeat}
+.contentArea .tabs .contlist .con3{ background:url(../images/content2/con3_img.jpg) right top no-repeat}
+.contentArea .tabs .contlist .con4{ background:url(../images/content2/con4_img.jpg) right top no-repeat}
+.contentArea .tabs .contlist .con5{ background:url(../images/content2/con5_img.jpg) right top no-repeat}
+.contentArea .tabs .contlist .con6{ background:url(../images/content2/con6_img.jpg) right top no-repeat}
+
+.contentArea .tabs .contlist .con7, .con8, .con9, .con10, .con11{ padding:3px 0 0 295px;}
+.contentArea .tabs .contlist .con7{ background:url(../images/content2/con7_img.jpg) left top no-repeat}
+.contentArea .tabs .contlist .con8{ background:url(../images/content2/con8_img.jpg) left top no-repeat}
+.contentArea .tabs .contlist .con9{ background:url(../images/content2/con9_img.jpg) left top no-repeat}
+.contentArea .tabs .contlist .con10{ background:url(../images/content2/con10_img.jpg) left top no-repeat}
+.contentArea .tabs .contlist .con11{ background:url(../images/content2/con11_img.jpg) left top no-repeat}
+
+.contentArea .tabs .contlist span{display: block; position:absolute; left: 0; top:18px ;width:405px; height:1px; border-bottom: 1px solid #666; }

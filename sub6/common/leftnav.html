@@ -1,0 +1,32 @@
+<script type="text/javascript">
+      $(document).ready(function() {
+          var num = '<?=$_GET['num']?>';
+          
+          if(num==1){
+              $('.leftMenu .menu1 a').addClass('current');
+          }else if(num==2){
+              $('.leftMenu .menu2 a').addClass('current');
+          }else if(num==3){
+              $('.leftMenu .menu3 a').addClass('current');
+          }
+       });
+</script>
+
+		<div class="main">
+        	<img src="common/images/main.jpg" alt="main visual" />
+        </div>
+        <!-- main e -->
+ 
+        <div class="container">
+            <div class="leftNav">
+                <h3>채용정보</h3>
+                <div class="leftMenu">
+                    <ul>
+                        <li class="menu1"><a href="sub6_1.html">인재상</a></li>
+                        <li class="menu2"><a href="sub6_2.html">인사복지제도</a></li>
+                        <li class="menu3"><a href="sub6_3.html">채용문의</a></li>
+                    </ul>
+               </div>
+               <!-- leftMenu e -->
+            </div>
+            <!-- leftNav e -->

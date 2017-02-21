@@ -1,0 +1,24 @@
+/* CSS Document */
+
+.leftNav{width: 200px; float:left; background-color:#f0f0f0;}
+.leftNav h3{width:200px; height:135px; text-indent:-9999px;
+        overflow:hidden; background:url(../images/sub6_leftTitle.jpg)}
+
+.leftNav .leftMenu li a {display: block;height:57px; 
+        text-indent:-9999px;overflow:hidden;}
+	
+.leftNav .leftMenu .menu1 a{
+		background: url(../images/sub6_menu1.jpg);}
+.leftNav .leftMenu .menu2 a{
+		background: url(../images/sub6_menu2.jpg);}
+.leftNav .leftMenu .menu3 a{
+		background: url(../images/sub6_menu3.jpg);}
+	
+.leftNav .leftMenu .menu1 a:hover{
+		background: url(../images/sub6_menu1_h.jpg);}
+.leftNav .leftMenu .menu2 a:hover{
+		background: url(../images/sub6_menu2_h.jpg);}
+.leftNav .leftMenu .menu3 a:hover{
+		background: url(../images/sub6_menu3_h.jpg);}
+
+		
